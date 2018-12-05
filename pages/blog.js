@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Button from 'antd/lib/button';
 import Head from 'next/head'
-import BaseHead from '../components/BaseHead'
+import Header from '../components/Header'
 import "../styles/main.scss"
 
 
@@ -12,10 +12,10 @@ export default class extends Component {
 
   render () {
     return <div>
-      <BaseHead/>
       <Head>
           <title>My page title</title>
       </Head>
+      <Header/>
       <h1>My blog post #{this.props.page}</h1>
       <p>
         <Button type="primary">Ok</Button>
